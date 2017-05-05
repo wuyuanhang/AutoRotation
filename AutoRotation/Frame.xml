@@ -1,0 +1,76 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<Frame name="MyFrameTemplate"  movable="true" resizable="true" enableMouse="true" enableKeyboard="true" virtual="true">
+<Size x="350" y="200"/>
+<Backdrop  edgeFile="Interface\AddOns\AutoPetbattle\image\UI-DialogBox-Gold-Border.tga" tile="true">
+		<EdgeSize val="2"/>
+		<BackgroundInsets left="5" right="5" top="5" bottom="5"/>
+</Backdrop>
+<Layers>
+			<Layer level="BACKGROUND" textureSubLevel="-1">
+				<Texture  horizTile="true" vertTile="true">
+					<!--<Color r="0" g="0" b="0" a="0"/>-->
+
+				</Texture>
+
+			</Layer>
+		</Layers>
+</Frame>
+
+<Font name="MyGameFontNormalSmall" font="Fonts\FRIZQT__.TTF" virtual="true" outline="NORMAL"> 
+    <FontHeight>
+        <AbsValue val="15" />
+    </FontHeight>
+</Font> 
+
+<Font name="MyGameFontNormalLarge" font="Fonts\FRIZQT__.TTF" virtual="true" outline="NORMAL"> 
+    <FontHeight>
+        <AbsValue val="20" />
+    </FontHeight>
+	<Shadow>
+          <Color a="0.9" r="0.2" g="0.2" b="0.2"/>
+          <Offset x="1" y="-1"/>
+	</Shadow>	  
+</Font>     
+
+<Font name="MyGameFontNormal" font="Fonts\FRIZQT__.TTF" virtual="true" outline="NORMAL"> 
+    <FontHeight>
+        <AbsValue val="14" />
+    </FontHeight>
+
+</Font>      
+
+<Font name="MyGameFontHuge" font="Fonts\FRIZQT__.TTF" virtual="true" outline="NORMAL"> 
+    <FontHeight>
+        <AbsValue val="30" />
+    </FontHeight>
+
+</Font>      
+
+<CheckButton name="MyCheckButton" virtual="true">
+		<Size>
+			<AbsDimension x="32" y="32"/>
+		</Size>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentText" inherits="MyGameFontNormalSmall" parentKey="text">
+					<Anchors>
+						<Anchor point="LEFT" relativePoint="RIGHT">
+							<Offset>
+								<AbsDimension x="-2" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<NormalTexture file="Interface\Buttons\UI-CheckBox-Up"/>
+		<PushedTexture file="Interface\Buttons\UI-CheckBox-Down"/>
+		<HighlightTexture file="Interface\Buttons\UI-CheckBox-Highlight" alphaMode="ADD"/>
+		<CheckedTexture file="Interface\Buttons\UI-CheckBox-Check"/>
+		<DisabledCheckedTexture file="Interface\Buttons\UI-CheckBox-Check-Disabled"/>
+	</CheckButton>
+
+
+</Ui>

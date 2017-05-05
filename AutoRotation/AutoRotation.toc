@@ -1,0 +1,24 @@
+## Interface: 70000
+## Title:|cff77B8DAAuto！|r|cFFBF00FF自动输出/治疗 v2.0|r
+## Notes:请使用oLUA解锁后使用，左键开始右键爆发，边缘左键移动矿体，右键菜单。
+## Author: 水月
+## Author-zhCN: 水月
+## Version:0.1
+## DefaultState:enabled
+## LoadOnDemand: 0
+## SavedVariablesPerCharacter:NoDISPEL,NoDISPELNum
+
+##Image files##
+..\image\image1.tga
+..\image\UI-DialogBox-Gold-Border.blp
+..\image\green.tga
+..\image\orange.tga
+..\image\pink.tga
+..\image\purple.tga
+..\image\qinglan.tga
+Frame.xml
+AutoRotation.lua
+
+
+
+
